@@ -1,0 +1,45 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        title Money-Calculator
+
+        style
+            include ./moneyStyle.css
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet")
+
+
+    body
+
+        h1 Вы откладываете 8 888 ₽ в месяц.<br> За три года вы бы заработали:
+
+        div.case#case-1
+           image(src="pictures/money.svg")
+           image(src="pictures/money.svg")
+           h2 ~319 968 ₽
+           h3 если откладывать под матрас
+
+        div.case#case-2
+           image(src="pictures/money.svg")
+           image(src="pictures/money.svg")
+           h2 ~366 375 ₽
+           h3 если откладывать на депозит
+
+        div.case#case-3
+           image(src="pictures/money.svg")
+           image(src="pictures/money.svg")
+           h2 до ~479 634 ₽
+           h3 если инвестировать в ПИФ &laquo;Альфа-Капитала&raquo;
+
+
+        div#block(onclick="location.href='Money.html';")
+           h3 А как в среднем у читателей vc.ru?
+              image(src="pictures/arrow.svg")
+
+
+        div.ask
+           h3 Как начать инвестировать?
+           h3
+               a#click(href="#") Узнать
+

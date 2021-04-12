@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Money-Calculator
+
+    style
+     include ./widgetStyle.css
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet")
+
+
+  body
+  
+    div
+      h1 Сколько денег вы откладываете в месяц?
+      h3 Ответьте и узнаете, сколько копят другие.
+
+      p
+         <br>
+         span#min 0 ₽
+         input.slider(type="range" min="0" max="50000" value="8888")
+         span#max 50 000 ₽
+
+      div.indicator
+      div.pop-up
+
