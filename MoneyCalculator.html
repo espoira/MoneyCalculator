@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Money-Calculator</title>
+    <style>body{
+    width:620px;
+    height:420px;
+    padding:0px 5px 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FE4D4A;
+    text-align:center;
+}
+
+h3{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.case{
+    float:left;
+    padding:0px 32px 0px 12px;
+}
+
+#case-1,#case-2{
+    width:142px;
+}
+#case-3{
+    width:210px;
+    padding-right:10px;
+}
+
+.case h3{
+    margin-top:-10px;
+}
+.case h3::after{
+    position:relative;
+    left:10px;
+    height:20px;
+    padding:3px 8px 3px 8px;
+    width:20px;
+    content:'?';
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    color:#FE4D4A;
+    border-radius:50%;
+    background: #FEEBEF;
+}
+
+#block{
+    position:absolute;
+    width: 640px;
+    height: 60px;
+    left: 0px;
+    top: 267px;
+    color: #FE4D4A;
+    background: #FEEBEF;
+    cursor:pointer;
+    padding-top:7px;
+}
+
+#block h3{
+    text-align:center;
+}
+#block img{
+    position:relative;
+    top:-2px;
+    left:12px;
+}
+
+#click{
+    padding:12px 38px 12px 38px;
+    width: 58px;
+    height: 21px;
+    color:#ffffff;
+    background: #FE4D4A;
+    border-radius: 5px;
+}
+
+.ask{
+    padding:0px 0px 0px 112px;
+}
+.ask h3{
+    float:left;
+    margin:112px 34px 0px 0px;
+}
+
+img{
+    position:relative;
+    top:8px;
+    left:30px;
+}
+
+a{
+    text-decoration:none;
+}
+
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Вы откладываете 8 888 ₽ в месяц.<br> За три года вы бы заработали:</h1>
+    <div class="case" id="case-1">
+      <image src="pictures/money.svg"></image>
+      <image src="pictures/money.svg"></image>
+      <h2>~319 968 ₽</h2>
+      <h3>если откладывать под матрас</h3>
+    </div>
+    <div class="case" id="case-2">
+      <image src="pictures/money.svg"></image>
+      <image src="pictures/money.svg"></image>
+      <h2>~366 375 ₽</h2>
+      <h3>если откладывать на депозит</h3>
+    </div>
+    <div class="case" id="case-3">
+      <image src="pictures/money.svg"></image>
+      <image src="pictures/money.svg"></image>
+      <h2>до ~479 634 ₽</h2>
+      <h3>если инвестировать в ПИФ &laquo;Альфа-Капитала&raquo;</h3>
+    </div>
+    <div id="block" onclick="location.href='Money.html';">
+      <h3>А как в среднем у читателей vc.ru?
+        <image src="pictures/arrow.svg"></image>
+      </h3>
+    </div>
+    <div class="ask">
+      <h3>Как начать инвестировать?</h3>
+      <h3><a id="click" href="#">Узнать</a></h3>
+    </div>
+  </body>
+</html>
