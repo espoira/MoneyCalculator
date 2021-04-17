@@ -3,120 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>Money-Calculator</title>
-    <style>body{
-	margin:0px;
-}
-
-div{
-	width:590px;
-	height:170px;
-	padding:5px 25px 5px 25px;
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-}
-
-h1{
-	font-weight: 500;
-	font-size: 22px;
-	line-height: 26px;
-}
-
-h3{
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 19px;
-}
-
-p{
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 21px;
-}
-
-#min{
-	float:left;
-}
-#max{
-	float:right;
-}
-
-input{
-	position: absolute;
-	left: 67px;
-	top: 124px;
-}
-
-.slider {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 454px;
-	height: 9px;
-	background: #E2E2E2;
-	border-radius: 8px;
-	outline: none;
-	-webkit-transition: .2s;
-	-moz-transition: .2s;
-	transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb{
-	-webkit-appearance: none;
-	appearance: none;
-	width: 25px;
-	height: 25px;
-	background: #FFFFFF;
-	border-radius:50%;
-	border:8px solid #FE4D4A;
-	cursor: pointer;
-}
-.slider::-moz-range-thumb{
-	-moz-appearance: none;
-	appearance: none;
-	width: 9px;
-	height: 9px;
-	background: #FFFFFF;
-	border-radius:50%;
-	border:8px solid #FE4D4A;
-	cursor: pointer;
-}
-
-.indicator{
-	position: absolute;
-	padding:0px;
-	width: 69px;
-	height: 26px;
-	left: 122px;
-	top: 86px;
-	padding:0px;
-	background: #FE4D4A;
-	border-radius: 5px;
-	opacity:0;
-}
-
-.pop-up{
-	position: absolute;
-	padding:0px;
-	width: 7px;
-	height: 7px;
-	left: 154px;
-	top: 108px;
-	background: #FE4D4A;
-	transform: rotate(-45deg);
-	opacity:0;
-}
-    </style>
+	
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&amp;display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="CalcStyle.css"/>
+  
   </head>
   <body>
-    <div>
-      <h1>Сколько денег вы откладываете в месяц?</h1>
-      <h3>Ответьте и узнаете, сколько копят другие.</h3>
-      <p><br><span id="min">0 ₽</span>
-        <input class="slider" type="range" min="0" max="50000" value="8888"><span id="max">50 000 ₽</span>
-      </p>
-      <div class="indicator"></div>
-      <div class="pop-up"></div>
+  
+	<div id="answer">
+		<h1>Сколько денег вы откладываете в месяц?</h1>
+		<h3>Ответьте и узнаете, сколько копят другие.</h3>
+		<p> <br><span id="min"> 0 ₽ </span> <input id="slider" type="range" min="0" max="50000" value="0" class="slider"> <span id="max"> 50 000 ₽ </span></p>
+		<div id='pop-up'></div>
+		<div id='indicator'></div>
+		<span id='quantity'></span> 
+	</div>  
+	<script type="text/javascript" src="QuantityMoney.js"></script>
+  
+	<div id="podschet" style='display:none'>
+    <h1>Вы откладываете <span id="summa"> 8 888 ₽ </span> в месяц.<br> За три года вы бы заработали:</h1>
+    <div class="case" id="case-1">
+      <image src="pictures/money.svg"></image>
+      <image src="pictures/money.svg"></image>
+      <h2>~319 968 ₽</h2>
+      <h3>если откладывать под матрас</h3>
     </div>
+    <div class="case" id="case-2">
+      <image src="pictures/money.svg"></image>
+      <image src="pictures/money.svg"></image>
+      <h2>~366 375 ₽</h2>
+      <h3>если откладывать на депозит</h3>
+    </div>
+    <div class="case" id="case-3">
+      <image src="pictures/money.svg"></image>
+      <image src="pictures/money.svg"></image>
+      <h2>до ~479 634 ₽</h2>
+      <h3>если инвестировать в ПИФ &laquo;Альфа-Капитала&raquo;</h3>
+    </div>
+    <div id="block" onclick="location.href='Money.html';">
+      <h3>А как в среднем у читателей vc.ru?
+        <image src="pictures/arrow.svg"></image>
+      </h3>
+    </div>
+    <div class="ask">
+      <h3>Как начать инвестировать?</h3>
+      <h3><a id="click" href="#">Узнать</a></h3>
+    </div>
+	</div>
   </body>
 </html>
