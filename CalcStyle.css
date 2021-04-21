@@ -26,6 +26,7 @@ h2{
     line-height: 29px;
     color: #FE4D4A;
     text-align:center;
+	margin-top:80px;
 }
 
 h3{
@@ -44,6 +45,9 @@ p{
 	line-height: 21px;
 }
 
+p span{
+	margin-top:20px;
+}
 #min{
 	float:left;
 }
@@ -53,9 +57,9 @@ p{
 }
 
 input{
-	position: absolute;
-	left: 67px;
-	top: 124px;
+	position: relative;
+	left: 16px;
+	top: 19px;
 }
 
 .slider {
@@ -66,9 +70,8 @@ input{
 	background: #E2E2E2;
 	border-radius: 8px;
 	outline: none;
-	-webkit-transition: .2s;
+	-webkit-transition: 0.2s;
 	-moz-transition: .2s;
-	transition: opacity .2s;
 }
 
 .slider::-webkit-slider-thumb{
@@ -81,7 +84,6 @@ input{
 	cursor: pointer;
 }
 .slider::-moz-range-thumb{
-	appearance: none;
 	width: 9px;
 	height: 9px;
 	background: #FFFFFF;
@@ -89,20 +91,29 @@ input{
 	border:8px solid #FE4D4A;
 	cursor: pointer;
 }
-
 .slider::-moz-range-track{
-	height:5px;
-	background: #E2E2E2;
-	border:none;
+	visibility:hidden;
+}
+
+#polosa{
+	position: relative;
+	padding:0px;
+	width: 0px;
+	height: 9px;
+	left: 43px;
+	top: -13px;
+	background: linear-gradient(90deg, #FF9796 4.65%, #FE4D4A 101.3%);
+	border-radius: 8px;
+	visibility:hidden;
 }
 
 #indicator{
-	position: absolute;
+	position: relative;
 	padding:0px;
 	width: 69px;
 	height: 26px;
-	left: 122px;
-	top: 86px;
+	left: 16px;
+	top: -88px;
 	padding:0px;
 	background: #FE4D4A;
 	border-radius: 5px;
@@ -110,21 +121,21 @@ input{
 }
 
 #pop-up{
-	position: absolute;
+	position: relative;
 	padding:0px;
 	width: 7px;
 	height: 7px;
-	left: 154px;
-	top: 108px;
+	left: 46px;
+	top: -58px;
 	background: #FE4D4A;
 	transform: rotate(-45deg);
 	opacity:0;
 }
 
-#quantity{
+#indicator span{
 	position:relative;
-	top:-48px;
-	left:62px;
+	top:4px;
+	left:8px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;
@@ -137,8 +148,10 @@ input{
     padding:0px 32px 0px 12px;
 }
 
-#case-1,#case-2{
+#case-1,#case-2,
+#case-3-pic{
     width:142px;
+	padding-top:0px;
 }
 #case-3{
     width:210px;
@@ -205,7 +218,7 @@ input{
 
 img{
     position:relative;
-    top:8px;
+    top:7px;
     left:30px;
 }
 
