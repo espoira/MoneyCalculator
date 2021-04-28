@@ -316,10 +316,17 @@ img{
 	padding:0px;
 }
 
-#statistika img{
+#circle img{
+	margin-top:-50px;
+	width:145px;
+}
+
+#circle h1{
 	position:relative;
-	top:40px;
-	left:50px;
+	top:147px;
+	left:44px;
+	font-weight: bold;
+	color: #FE4D4A;
 }
 
 #info-block{
