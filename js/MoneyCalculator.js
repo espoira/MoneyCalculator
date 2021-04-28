@@ -56,7 +56,7 @@
 				mille = mille - 1000*million;
 				var milleStr = String(mille);
 				if (Math.floor(mille/100)==0) {
-					if (Math.floor(cent/10)==0) {milleStr = '00' + milleStr;}
+					if (Math.floor(mille/10)==0) {milleStr = '00' + milleStr;}
 					else milleStr = '0' + milleStr;
 				};	
 				NumberText = String(million) + ' ' + milleStr + ' ' + centStr;

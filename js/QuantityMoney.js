@@ -62,7 +62,9 @@
 		document.getElementById('polosa').style.visibility = 'hidden';
 	};
 	
-	var flag;
+	
+	var flag; 
+	var AllMonets;
 	
 	var moneyPic = new Array(30);
 	for (var i = 1; i <= 30; i++){
@@ -72,7 +74,7 @@
 	};
 		
 	function ScreenCleaning(){
-		for (var i = 1; i <= 30; i++){
+		for (var i = 1; i <= AllMonets; i++){
 			document.getElementById('monetka').remove();
 			document.getElementById('podschet').style.display = 'none';
 		};
@@ -149,6 +151,7 @@
 			
 		};
 		
+		AllMonets = kNP + kDep + kInv;
 		flag = true;
 
 	};
